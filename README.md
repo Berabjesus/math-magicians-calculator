@@ -56,7 +56,7 @@ The app wil open in your default browser.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/tadeuasarro/react-calculator/issues)
+Feel free to check the [issues page](https://github.com/Berabjesus/math-magicians-calculator/issues)
 
 ### Show your support
 
