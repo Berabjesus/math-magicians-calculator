@@ -26,7 +26,7 @@
 Clone the repo with
 
 ```
-  https://github.com/tadeuasarro/react-calculator.git
+  https://github.com/Berabjesus/math-magicians-calculator.git
 ```
 
 Install packages with
