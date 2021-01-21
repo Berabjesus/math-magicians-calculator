@@ -9,7 +9,7 @@
 
 #### Livedemo
 
-- [Heroku]()
+- [Click Here](https://math-magicians-calc.herokuapp.com/)
 
 ## Built With
 
