@@ -5,11 +5,11 @@
 - ReactJS Setup
 - Initialize the Github repo;
 - Add the linters.
-- Push to Heroku.
+- Deploy on Heroku.
 
 #### Livedemo
 
-- [Heroku](https://tadeu-react-calculator.herokuapp.com/)
+- [Heroku]()
 
 ## Built With
 
