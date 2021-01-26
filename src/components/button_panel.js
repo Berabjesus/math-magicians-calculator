@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './bbutton';
+import Button from './button';
 
 const arrayOfRows = () => [
   ['AC', '+/-', '%', '÷'],
