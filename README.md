@@ -1,11 +1,5 @@
-# Math Magicians React Calculator - Milestone 1
+# Math Magicians React Calculator
 > React Calculator Project
-
-#### Features
-- ReactJS Setup
-- Initialize the Github repo;
-- Add the linters.
-- Deploy on Heroku.
 
 #### Livedemo
 
