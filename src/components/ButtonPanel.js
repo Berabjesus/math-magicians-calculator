@@ -11,15 +11,14 @@ const arrayOfRows = () => [
 
 const ButtonPanel = () => {
   let [rowKeys, cellKeys] = [0, 0];
-  console.log(rowKeys, cellKeys);
-
-  const rows = arrayOfRows().map((row, index) => {
-    const newRow = [];
-    cellKeys += 1;
+  const rows = arrayOfRows().map(row => {
     rowKeys += 1;
-    newRow.push(row.map((element, index) => <Button key={index + cellKeys} value={element} />));
+    const newRow = (row.map(element => {
+      cellKeys += 1;
+      return <Button key={cellKeys} value={element} />;
+    }));
     return (
-      <div key={index + rowKeys} className="row">
+      <div key={rowKeys} className="row">
         {newRow}
       </div>
     );
