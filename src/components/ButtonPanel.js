@@ -1,4 +1,3 @@
-import { element } from 'prop-types';
 import React from 'react';
 import Button from './Button';
 
@@ -24,6 +23,7 @@ const ButtonPanel = () => {
         {newRow}
       </div>,
     );
+    return null;
   });
   return (
     <>
