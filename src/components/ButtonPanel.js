@@ -10,20 +10,19 @@ const arrayOfRows = () => [
 ];
 
 const ButtonPanel = () => {
-  const rows = [];
-  let keyCounter = -1;
-  arrayOfRows().map(row => {
+  let [rowKeys, cellKeys] = [0, 0];
+  console.log(rowKeys, cellKeys);
+
+  const rows = arrayOfRows().map((row, index) => {
     const newRow = [];
-    newRow.push(row.map(element => {
-      keyCounter += 1;
-      return <Button key={keyCounter} value={element} />;
-    }));
-    rows.push(
-      <div key={keyCounter} className="row">
+    cellKeys += 1;
+    rowKeys += 1;
+    newRow.push(row.map((element, index) => <Button key={index + cellKeys} value={element} />));
+    return (
+      <div key={index + rowKeys} className="row">
         {newRow}
-      </div>,
+      </div>
     );
-    return null;
   });
   return (
     <>
