@@ -1,6 +1,6 @@
 import React from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
+import Display from './display';
+import ButtonPanel from './button_panel';
 
 const App = () => (
   <>
