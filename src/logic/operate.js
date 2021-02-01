@@ -1,4 +1,4 @@
-const Big = require('big.js')
+import Big from 'big.js'
 
 const operate = (numberOne, numberTwo, operation) => {
   if (parseInt(numberTwo, 10) === 0) {return "You can't divide a number by zero"}
@@ -11,6 +11,8 @@ const operate = (numberOne, numberTwo, operation) => {
   operation === '+' ? numberOne.plus(numberTwo) : 
   operation === '-' ? numberOne.minus(numberTwo) :
   operation === '%' ? numberOne.div(100) : null
+  
   return result.toNumber() 
 }
 
+export default operate
