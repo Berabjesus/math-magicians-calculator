@@ -1,9 +1,19 @@
 const Big = require('big.js')
 
 const operate = (numberOne, numberTwo, operation) => {
+  if (parseInt(numberTwo, 10) === 0) {return "You can't divide a number by zero"}
+
   numberOne = Big(numberOne)
   numberTwo = Big(numberTwo)
-  
+  let result = ''
+  result = operation === '÷' ? numberOne.div(numberTwo) : 
+  operation === 'x' ? numberOne.times(numberTwo) : 
+  operation === '+' ? numberOne.plus(numberTwo) : 
+  operation === '-' ? numberOne.minus(numberTwo) :
+  operation === '%' ? numberTwo.div(100) : null
+  return result
 }
 
-operate(12.5345345345345,33,'-')
+
+
+
