@@ -10,10 +10,7 @@ const operate = (numberOne, numberTwo, operation) => {
   operation === 'x' ? numberOne.times(numberTwo) : 
   operation === '+' ? numberOne.plus(numberTwo) : 
   operation === '-' ? numberOne.minus(numberTwo) :
-  operation === '%' ? numberTwo.div(100) : null
-  return result
+  operation === '%' ? numberOne.div(100) : null
+  return result.toNumber() 
 }
-
-
-
 
