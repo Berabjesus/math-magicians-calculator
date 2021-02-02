@@ -5,7 +5,7 @@ const calculate = (dataset, buttonName) => {
   let { total, next, operation } = dataset;
   switch (buttonName) {
     case '=':
-      return next ? total = operate(total, next, operation) : total;
+      return next ? operate(total, next, operation) : total;
     case 'AC':
       total = null;
       next = null;
@@ -16,7 +16,12 @@ const calculate = (dataset, buttonName) => {
       next *= -1;
       break;
     case '.':
-      return total.includes('.') ? total : total += buttonName;
+      if (total.includes('.')) {
+        return total;
+      }
+      total += buttonName;
+      return total;
+
     case '÷': case 'x': case '+': case '-': case '%':
       total = operate(total, next, operation);
       break;
