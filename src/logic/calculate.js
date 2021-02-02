@@ -2,28 +2,26 @@ import operate from './operate';
 
 const calculate = (dataset, buttonName) => {
   if (!dataset) { return false; }
-
   let { total, next, operation } = dataset;
   switch (buttonName) {
     case '=':
-      return total;
+      return next ? total = operate(total, next, operation) : total;
     case 'AC':
-      total = 0;
-      next = 0;
-      operation = '';
+      total = null;
+      next = null;
+      operation = null;
       break;
     case '+/-':
       total *= -1;
       next *= -1;
       break;
     case '.':
-      total += buttonName;
-      break;
+      return total.includes('.') ? total : total += buttonName;
     case '÷': case 'x': case '+': case '-': case '%':
       total = operate(total, next, operation);
       break;
     default:
-      total = '';
+      total = null;
       break;
   }
   return total;

@@ -3,7 +3,7 @@ import Big from 'big.js';
 const operate = (numberOne, numberTwo, operation) => {
   const firstNumber = Big(numberOne);
   const secondNumber = Big(numberTwo);
-  let result = '';
+  let result;
   switch (operation) {
     case '÷':
       if (parseInt(secondNumber, 10) === 0) { return "You can't divide a number by zero"; }
@@ -22,7 +22,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = firstNumber.div(secondNumber);
       break;
     default:
-      result = '';
+      result = null;
       break;
   }
 
