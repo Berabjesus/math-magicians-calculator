@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './button';
 
 const arrayOfRows = () => [
@@ -28,6 +29,10 @@ const ButtonPanel = ({ clickHandler }) => {
       {rows}
     </>
   );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;

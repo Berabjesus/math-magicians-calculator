@@ -1,10 +1,22 @@
+/* eslint-disable no-unused-expressions */
+
 import operate from './operate';
+
+const stripLeadingZeros = number => {
+  if (number) {
+    if (number.toString().includes('.') || number === "You can't divide a number by zero") {
+      return number;
+    }
+    return parseFloat(number, 10).toString();
+  }
+  return null;
+};
 
 const calculate = (dataset, buttonName) => {
   if (!dataset) { return false; }
   let { total, next, operation } = dataset;
 
-  if (!parseInt(buttonName, 10) && buttonName !== '0') {    
+  if (!parseInt(buttonName, 10) && buttonName !== '0') {
     switch (buttonName) {
       case '=':
         next && operation ? (total = operate(total, next, operation), next = null, operation = '=') : null;
@@ -19,7 +31,7 @@ const calculate = (dataset, buttonName) => {
         break;
       case '.':
         if (!total && !next) {
-          return false
+          return false;
         }
         if (operation) {
           if (next.includes('.')) {
@@ -33,18 +45,18 @@ const calculate = (dataset, buttonName) => {
           total += buttonName;
         }
         break;
-      case '÷': case 'x': case '+': case '-': 
+      case '÷': case 'x': case '+': case '-':
         operation = buttonName;
         break;
-      case '%':        
-        total = operate(total, '100', buttonName)
+      case '%':
+        total = operate(total, '100', buttonName);
         break;
       default:
         total = null;
         break;
     }
   } else if (operation && operation !== '=') {
-    next ? next +=  buttonName : next = buttonName;
+    next ? next += buttonName : next = buttonName;
   } else if (operation === '=') {
     total = buttonName;
     operation = null;
@@ -53,16 +65,5 @@ const calculate = (dataset, buttonName) => {
   }
   return { total: stripLeadingZeros(total), next: stripLeadingZeros(next), operation };
 };
-
-const stripLeadingZeros = number => {
-  if (number) {
-    if (number.toString().includes('.') || number === "You can't divide a number by zero") {
-      return number
-    }
-    return parseFloat(number, 10).toString()
-  } else {
-    return null
-  }
-}
 
 export default calculate;
