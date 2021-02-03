@@ -18,8 +18,8 @@ const operate = (numberOne, numberTwo, operation) => {
     case '-':
       result = firstNumber.minus(secondNumber);
       break;
-    case '%':
-      result = firstNumber.div(secondNumber);
+    case '%':      
+      result = firstNumber.div(secondNumber);      
       break;
     default:
       result = null;
