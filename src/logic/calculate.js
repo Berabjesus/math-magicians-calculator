@@ -4,7 +4,7 @@ const calculate = (dataset, buttonName) => {
   if (!dataset) { return false; }
   let { total, next, operation } = dataset;
 
-  if (isNaN(buttonName)) {
+  if (Number.isNaN(buttonName)) {
     switch (buttonName) {
       case '=':
         next && operation ? (total = operate(total, next, operation), next = null, operation = '=') : null;
