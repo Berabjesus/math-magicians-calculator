@@ -29,7 +29,7 @@ const calculate = (dataset, buttonName) => {
       total = null;
       break;
   }
-  return total;
+  return {total: total};
 };
 
 export default calculate;
