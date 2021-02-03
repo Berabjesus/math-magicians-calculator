@@ -3,11 +3,26 @@ import Display from './display';
 import ButtonPanel from './button_panel';
 import calculate from '../logic/calculate';
 
-const App = () => (
-  <>
-    <Display />
-    <ButtonPanel />
-  </>
-);
-calculate();
-export default App;
+export default class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      total: null,
+      next: null,
+      operation: null
+    }
+  }
+
+  handleClick = buttonName => {
+    this.setState(state => console.log(state))
+    
+  }
+  render() {
+    return(
+      <>
+        <Display />
+        <ButtonPanel />
+      </>
+    )
+  }
+}
