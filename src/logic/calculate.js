@@ -50,8 +50,8 @@ const calculate = (dataset, buttonName) => {
         break;
       case '%':
         if (!total && !next) {
-          return false
-        } 
+          return false;
+        }
         if (operation) {
           next = operate(next, '100', buttonName);
         } else {
