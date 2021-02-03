@@ -2,7 +2,7 @@ import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
   const firstNumber = Big(numberOne);
-  const secondNumber = Big(numberTwo);  
+  const secondNumber = Big(numberTwo);
   let result;
   switch (operation) {
     case '÷':

@@ -55,8 +55,7 @@ const calculate = (dataset, buttonName) => {
         if (!total && !next) {
           return false;
         }
-        console.log(total, next);
-        
+
         if (next) {
           next = operate(next, '100', buttonName);
         } else {
