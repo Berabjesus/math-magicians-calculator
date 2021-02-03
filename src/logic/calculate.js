@@ -5,7 +5,7 @@ import operate from './operate';
 const stripLeadingZeros = number => {
   if (number) {
     if (number.toString().includes('.') || number === "You can't divide a number by zero") {
-      return number;
+      return number.toString();
     }
     return parseFloat(number, 10).toString();
   }
@@ -49,7 +49,14 @@ const calculate = (dataset, buttonName) => {
         operation = buttonName;
         break;
       case '%':
-        total = operate(total, '100', buttonName);
+        if (!total && !next) {
+          return false
+        } 
+        if (operation) {
+          next = operate(next, '100', buttonName);
+        } else {
+          total = operate(total, '100', buttonName);
+        }
         break;
       default:
         total = null;
