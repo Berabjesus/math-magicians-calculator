@@ -17,6 +17,9 @@ const calculate = (dataset, buttonName) => {
   let { total, next, operation } = dataset;
 
   if (!parseInt(buttonName, 10) && buttonName !== '0') {
+    if (!total) {
+      return false;
+    }
     switch (buttonName) {
       case '=':
         next && operation ? (total = operate(total, next, operation), next = null, operation = '=') : null;
@@ -70,6 +73,7 @@ const calculate = (dataset, buttonName) => {
   } else {
     total ? total += buttonName : total = buttonName;
   }
+
   return { total: stripLeadingZeros(total), next: stripLeadingZeros(next), operation };
 };
 
