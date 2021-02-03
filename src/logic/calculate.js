@@ -3,7 +3,7 @@ import operate from './operate';
 const calculate = (dataset, buttonName) => {
   if (!dataset) { return false; }
   let { total, next, operation } = dataset;
-  
+
   if (isNaN(buttonName)) {
     switch (buttonName) {
       case '=':
@@ -23,7 +23,7 @@ const calculate = (dataset, buttonName) => {
         }
         total += buttonName;
         return total;
-  
+
       case '÷': case 'x': case '+': case '-': case '%':
         total = operate(total, next, operation);
         break;
@@ -32,11 +32,9 @@ const calculate = (dataset, buttonName) => {
         break;
     }
   } else {
-    console.log(total);
-    
-    total = buttonName
+    total ? total =buttonName : next : buttonName
   }
-  return {total: total, next: next, operation: operation};
+  return { total, next, operation };
 };
 
 export default calculate;

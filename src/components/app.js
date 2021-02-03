@@ -5,24 +5,24 @@ import calculate from '../logic/calculate';
 
 export default class App extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       total: null,
       next: null,
-      operation: null
-    }
+      operation: null,
+    };
   }
 
   handleClick = buttonName => {
-    this.setState(state => calculate(state, buttonName))
-    
+    this.setState(state => calculate(state, buttonName));
   }
+
   render() {
-    return(
+    return (
       <>
-        <Display result={this.state.total} />
-        <ButtonPanel clickHandler={this.handleClick }/>
+        <Display result={this.state.total ? this.state.total : this.state.next} />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
-    )
+    );
   }
 }

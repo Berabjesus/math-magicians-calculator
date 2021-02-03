@@ -9,7 +9,7 @@ const arrayOfRows = () => [
   ['0', '.', '='],
 ];
 
-const ButtonPanel = ({clickHandler}) => {
+const ButtonPanel = ({ clickHandler }) => {
   let [rowKeys, cellKeys] = [0, 0];
   const rows = arrayOfRows().map(row => {
     rowKeys += 1;
