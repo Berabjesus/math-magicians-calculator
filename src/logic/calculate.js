@@ -18,15 +18,19 @@ const calculate = (dataset, buttonName) => {
         next ? next *= -1 : total *= -1;
         break;
       case '.':
-        if (total.includes('.')) {
-          return total;
+        if (operation) {
+          if (next.includes('.')) {
+            return next;
+          }
+          next += buttonName;
+        } else {
+          if (total.includes('.')) {
+            return total;
+          }
+          total += buttonName;
         }
-        total += buttonName;
-        return total;
-
+        break;
       case '÷': case 'x': case '+': case '-': 
-        // operation ? total = operate(total, next, operation) :
-
         operation = buttonName;
         break;
       case '%':        
@@ -44,12 +48,13 @@ const calculate = (dataset, buttonName) => {
   } else {
     total ? total += buttonName : total = buttonName;
   }
-  console.log(total, next, operation);
-
   return { total: stripLeadingZeros(total), next: stripLeadingZeros(next), operation };
 };
 
 const stripLeadingZeros = number => {
-  return number ? parseFloat(number, 10) : null
+  if (number && number.toString().includes('.')) {return number}
+
+  return number ? parseFloat(number, 10).toString() : null
 }
+
 export default calculate;
