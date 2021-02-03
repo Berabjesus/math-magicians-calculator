@@ -18,6 +18,9 @@ const calculate = (dataset, buttonName) => {
         next ? next *= -1 : total *= -1;
         break;
       case '.':
+        if (!total && !next) {
+          return false
+        }
         if (operation) {
           if (next.includes('.')) {
             return next;
@@ -52,9 +55,14 @@ const calculate = (dataset, buttonName) => {
 };
 
 const stripLeadingZeros = number => {
-  if (number && number.toString().includes('.')) {return number}
-
-  return number ? parseFloat(number, 10).toString() : null
+  if (number) {
+    if (number.toString().includes('.') || number === "You can't divide a number by zero") {
+      return number
+    }
+    return parseFloat(number, 10).toString()
+  } else {
+    return null
+  }
 }
 
 export default calculate;
