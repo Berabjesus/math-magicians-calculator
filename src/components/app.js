@@ -20,7 +20,7 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <Display result={this.state.total ? this.state.total : this.state.next} />
+        <Display result={this.state.next ? this.state.next : this.state.total} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );

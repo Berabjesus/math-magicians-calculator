@@ -7,7 +7,8 @@ const calculate = (dataset, buttonName) => {
   if (isNaN(buttonName)) {
     switch (buttonName) {
       case '=':
-        return next ? operate(total, next, operation) : total;
+        next && operation ? (total = operate(total, next, operation), next = null, operation = '=') : null;
+        break;
       case 'AC':
         total = null;
         next = null;
@@ -25,15 +26,27 @@ const calculate = (dataset, buttonName) => {
         return total;
 
       case '÷': case 'x': case '+': case '-': case '%':
-        total = operate(total, next, operation);
+        // operation ? total = operate(total, next, operation) :
+
+        operation = buttonName;
+
         break;
       default:
         total = null;
         break;
     }
   } else {
-    total ? total =buttonName : next : buttonName
+    if (operation && operation !== '=') {
+      next ? next += buttonName : next = buttonName;
+    } else if(operation === '=') {
+      total = buttonName
+      operation = null
+    } else{
+      total ? total += buttonName : total = buttonName;
+    }
   }
+  console.log(total, next, operation);
+
   return { total, next, operation };
 };
 
