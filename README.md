@@ -10,6 +10,7 @@
 - [JavaScript](https://www.javascript.com/)
 - [React](https://reactjs.org/)
 - [NPM](https://www.npmjs.com/)
+- Eslint
 
 ## Packages
 - [BigJS](https://github.com/MikeMcl/big.js/)
