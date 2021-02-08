@@ -12,10 +12,7 @@ const Calculator = () => {
 
   return (
     <section className="d-flex pt-3">
-      <aside>
-        <h2>Lets do some math!</h2>
-      </aside>
-      <div className='h-100 ml-auto calc-container'>
+      <div className='h-100 mx-auto calc-container'>
         <Display result={state.next ? state.next : state.total} />
         <ButtonPanel clickHandler={handleClick} />
       </div>
