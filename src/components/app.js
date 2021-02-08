@@ -13,10 +13,12 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Route exact path='/' component={Home} />
-      <Route path='/calculator' component={Calculator} />
-      <Route path='/quote' component={Quote}/>
-      <Route path='*' component={Error}/>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/calculator' component={Calculator} />
+        <Route path='/quote' component={Quote}/>
+        <Route path='*' component={Error}/>
+      </Switch>
     </BrowserRouter>
   );
 };
