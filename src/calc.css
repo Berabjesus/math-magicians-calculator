@@ -47,10 +47,11 @@
   cursor: pointer;
 }
 
-.rows button:last-child{
+.rows button:last-child {
   background: var(--button-2);
 }
-.rows:last-child button:first-child{
+
+.rows:last-child button:first-child {
   flex: 1 0 50%;
 }
 
