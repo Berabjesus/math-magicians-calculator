@@ -43,6 +43,10 @@
   font-size: 28px;
 }
 
+.buttons:hover {
+  cursor: pointer;
+}
+
 .row button:last-child{
   background: var(--button-2);
 }

@@ -9,7 +9,7 @@ import calculate from '../logic/calculate';
 const App = () => {
   const [state, setState] = React.useState({ total: null, next: null, operation: null });
 
-  const handleClick = buttonName => {
+  const handleClick = buttonName => {    
     setState(calculate(state, buttonName));
   };
 
