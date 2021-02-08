@@ -25,7 +25,7 @@ const calculate = (dataset, buttonName) => {
         next && operation ? (total = operate(total, next, operation), next = null, operation = '=') : null;
         break;
       case 'AC':
-        total = 0;
+        total = '0';
         next = null;
         operation = null;
         break;
