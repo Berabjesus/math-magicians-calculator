@@ -29,7 +29,7 @@ describe('Button Functionalities', () => {
     });
   });
 
-  it('should return 6 when = is clicked', () => {
+  it('should return 6 when equal is clicked', () => {
     const result = calculate(state, '=');
     expect(result).toEqual({
       total: '6',
