@@ -13,7 +13,7 @@ const stripLeadingZeros = number => {
 };
 
 const calculate = (dataset, buttonName) => {
-  if (!dataset) { return  {total: null, next: null, operation: null }; }
+  if (!dataset) { return { total: null, next: null, operation: null }; }
   let { total, next, operation } = dataset;
 
   if (!parseInt(buttonName, 10) && buttonName !== '0') {

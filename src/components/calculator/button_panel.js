@@ -19,7 +19,7 @@ const ButtonPanel = ({ clickHandler }) => {
       return <Button key={cellKeys} value={element} handleClick={clickHandler} />;
     }));
     return (
-      <div key={rowKeys} className="row flex">
+      <div key={rowKeys} className="rows flex">
         {newRow}
       </div>
     );

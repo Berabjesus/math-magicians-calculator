@@ -2,22 +2,20 @@
 /* eslint-disable react/destructuring-assignment */
 
 import React from 'react';
-import Display from './display';
-import ButtonPanel from './button_panel';
-import calculate from '../logic/calculate';
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import Navbar from './display/navbar'
+import Home from './display/home'
+import Calculator from './display/calculator';
+import Quote from './display/quote'
 
 const App = () => {
-  const [state, setState] = React.useState({ total: null, next: null, operation: null });
-
-  const handleClick = buttonName => {    
-    setState(calculate(state, buttonName));
-  };
-
   return (
-    <section className='calc-container'>
-      <Display result={state.next ? state.next : state.total} />
-      <ButtonPanel clickHandler={handleClick} />
-    </section>
+    <BrowserRouter>
+      <Navbar />
+      <Route exact path='/' component={Home} />
+      <Route path='/calculator' component={Calculator} />
+      <Route path='/quote' component={Quote}/>
+    </BrowserRouter>
   );
 };
 

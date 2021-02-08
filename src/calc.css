@@ -10,7 +10,7 @@
   --button-2: #f5913e;
 }
 
-.h-100 {
+.h-100px {
   height: 100px;
 }
 
@@ -47,10 +47,13 @@
   cursor: pointer;
 }
 
-.row button:last-child{
+.rows button:last-child{
   background: var(--button-2);
 }
-.row:last-child button:first-child{
+.rows:last-child button:first-child{
   flex: 1 0 50%;
 }
 
+#root {
+  padding: 0 2rem;
+}
