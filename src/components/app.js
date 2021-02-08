@@ -14,10 +14,10 @@ const App = () => {
   };
 
   return (
-    <>
+    <section className='calc-container'>
       <Display result={state.next ? state.next : state.total} />
       <ButtonPanel clickHandler={handleClick} />
-    </>
+    </section>
   );
 };
 
