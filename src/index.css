@@ -14,14 +14,16 @@
   height: 100px;
 }
 
+.flex {
+  display: flex;
+}
+
 .calc-container {
-  border: 1px solid red;
   width: 700px;
 }
 
 .display {
   background: var(--display);
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 0 0.8rem;
@@ -34,10 +36,17 @@
   color: white;
 }
 
-.row {
-  display: flex;
-}
-
 .buttons {
   flex: 1 0 25%;
+  border: 2px solid rgb(224, 188, 188);
+  color: black;
+  font-size: 28px;
 }
+
+.row button:last-child{
+  background: var(--button-2);
+}
+.row:last-child button:first-child{
+  flex: 1 0 50%;
+}
+
