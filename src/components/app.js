@@ -7,6 +7,7 @@ import Navbar from './display/navbar'
 import Home from './display/home'
 import Calculator from './display/calculator';
 import Quote from './display/quote'
+import Error from './display/error'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route exact path='/' component={Home} />
       <Route path='/calculator' component={Calculator} />
       <Route path='/quote' component={Quote}/>
+      <Route path='*' component={Error}/>
     </BrowserRouter>
   );
 };
