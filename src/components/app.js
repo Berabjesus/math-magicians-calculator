@@ -7,11 +7,11 @@ import ButtonPanel from './button_panel';
 import calculate from '../logic/calculate';
 
 const App = () => {
-  const [state, setState] = React.useState({total: null, next: null, operation: null})
+  const [state, setState] = React.useState({ total: null, next: null, operation: null });
 
   const handleClick = buttonName => {
-    setState(prevState => calculate(state, buttonName))
-  }
+    setState(calculate(state, buttonName));
+  };
 
   return (
     <>
@@ -19,6 +19,6 @@ const App = () => {
       <ButtonPanel clickHandler={handleClick} />
     </>
   );
-}
+};
 
-export default App
+export default App;
