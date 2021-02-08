@@ -1,7 +1,7 @@
 import operate from '../operate';
 
 describe('operation Functionalities', () => {
-  let [firstNum, secondNum] = [10, 20];
+  const [firstNum, secondNum] = [10, 20];
 
   it('should return "You cant divide a number by zero" warning when trying to devide a number by zero', () => {
     const result = operate(firstNum, 0, '÷');
