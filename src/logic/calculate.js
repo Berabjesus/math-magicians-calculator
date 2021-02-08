@@ -13,19 +13,19 @@ const stripLeadingZeros = number => {
 };
 
 const calculate = (dataset, buttonName) => {
-  if (!dataset) { return false; }
+  if (!dataset) { return { total: null, next: null, operation: null }; }
   let { total, next, operation } = dataset;
 
   if (!parseInt(buttonName, 10) && buttonName !== '0') {
     if (!total) {
-      return false;
+      return dataset;
     }
     switch (buttonName) {
       case '=':
         next && operation ? (total = operate(total, next, operation), next = null, operation = '=') : null;
         break;
       case 'AC':
-        total = 0;
+        total = '0';
         next = null;
         operation = null;
         break;
