@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Calculator Page correctly 1`] = `
+<section
+  className="d-flex pt-3"
+>
+  <div
+    className="h-100 mx-auto calc-container"
+  >
+    <div
+      className="display flex h-100"
+    >
+      <p>
+        0
+      </p>
+    </div>
+    <div
+      className="rows flex"
+    >
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      className="rows flex"
+    >
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+    </div>
+    <div
+      className="rows flex"
+    >
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="rows flex"
+    >
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="rows flex"
+    >
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="buttons h-100px"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</section>
+`;

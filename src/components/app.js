@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './display/navbar';
-import Home from './display/home';
-import Calculator from './display/calculator';
-import Quote from './display/quote';
-import Error from './display/error';
+import Navbar from './page/navbar';
+import Home from './page/home';
+import Calculator from './page/calculator';
+import Quote from './page/quote';
+import Error from './page/error';
 
 const App = () => (
   <BrowserRouter>
