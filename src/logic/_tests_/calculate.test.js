@@ -84,7 +84,7 @@ describe('Button Functionalities', () => {
     });
   });
 
-  it('should return 0.6666666666666666 for the total value', () => {
+  it('should return 0.666666666666666 for the total value', () => {
     state.operation = '÷';
     const result = calculate(state, '=');
     expect(result).toEqual({

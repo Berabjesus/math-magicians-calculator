@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 import Display from '../calculator/display';
 
 describe('Display', () => {
-  it('renders correctly', () => {
+  it('renders the diplay component', () => {
     const tree = renderer.create(<Display />).toJSON();
     expect(tree).toMatchSnapshot();
   });

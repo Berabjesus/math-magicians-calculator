@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the Home Page correctly without errors 1`] = `
+exports[`renders the Home Page correctly 1`] = `
 <article
   className="pt-3"
 >

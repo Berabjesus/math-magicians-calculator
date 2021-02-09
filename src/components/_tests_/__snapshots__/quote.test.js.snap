@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the Quote Page correctly without errors 1`] = `
+exports[`renders the Quote Page correctly 1`] = `
 <section
   className="pt-5"
 >

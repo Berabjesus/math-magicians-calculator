@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Display renders correctly 1`] = `
+exports[`Display renders the diplay component 1`] = `
 <div
   className="display flex h-100"
 >

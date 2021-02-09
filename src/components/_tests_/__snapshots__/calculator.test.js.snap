@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the Calculator Page correctly without errors 1`] = `
+exports[`renders the Calculator Page correctly 1`] = `
 <section
   className="d-flex pt-3"
 >

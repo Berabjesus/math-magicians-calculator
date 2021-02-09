@@ -7,7 +7,7 @@ import Button from '../calculator/button';
 const handleClick = () => ({ total: '0', next: '0', operation: 'x' });
 
 describe('Button', () => {
-  it('renders correctly', () => {
+  it('renders the button component', () => {
     const tree = renderer.create(<Button value="0" handleClick={handleClick} />).toJSON();
     expect(tree).toMatchSnapshot();
   });

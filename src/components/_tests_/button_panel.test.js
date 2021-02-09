@@ -7,7 +7,7 @@ import ButtonPanel from '../calculator/button_panel';
 const handleClick = () => ({ total: '0', next: '0', operation: 'x' });
 
 describe('Button Panel', () => {
-  it('renders correctly', () => {
+  it('renders the button panel component', () => {
     const tree = renderer.create(<ButtonPanel clickHandler={handleClick} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
