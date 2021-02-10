@@ -9,6 +9,7 @@
 
 - [JavaScript](https://www.javascript.com/)
 - [React](https://reactjs.org/)
+- React Hooks
 - [NPM](https://www.npmjs.com/)
 - Eslint
 
