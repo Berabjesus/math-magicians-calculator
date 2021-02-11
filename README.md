@@ -12,6 +12,7 @@
 - React Hooks
 - [NPM](https://www.npmjs.com/)
 - Eslint
+- Heroku
 
 ## Packages
 - [BigJS](https://github.com/MikeMcl/big.js/)
