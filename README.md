@@ -10,6 +10,7 @@
 - [JavaScript](https://www.javascript.com/)
 - [React](https://reactjs.org/)
 - React Hooks
+- HTML and CSS
 - [NPM](https://www.npmjs.com/)
 - Eslint
 - Heroku
