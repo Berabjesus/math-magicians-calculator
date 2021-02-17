@@ -7,7 +7,7 @@
 
 ## Built With
 
-- [JavaScript](https://www.javascript.com/)
+- [JavaScript ES6](https://www.javascript.com/) 
 - [React](https://reactjs.org/)
 - React Hooks
 - HTML and CSS
