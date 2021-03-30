@@ -1,5 +1,5 @@
 # Math Magicians React Calculator
-> React Calculator Project
+> Basic React Calculator Project
 
 #### Livedemo
 
