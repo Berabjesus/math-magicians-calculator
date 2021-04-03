@@ -1,5 +1,5 @@
 # Math Magicians React Calculator
-> Basic React Calculator Project
+> Basic Calculator built with React js
 
 #### Livedemo
 
@@ -7,9 +7,13 @@
 
 ## Built With
 
-- [JavaScript](https://www.javascript.com/)
+- [JavaScript ES6](https://www.javascript.com/) 
 - [React](https://reactjs.org/)
+- React Hooks
+- HTML and CSS
 - [NPM](https://www.npmjs.com/)
+- Eslint
+- Heroku
 
 ## Packages
 - [BigJS](https://github.com/MikeMcl/big.js/)
